@@ -12,7 +12,7 @@ sim-fxp_div_pipe:
 	
 sim-fxp_mul_pipe:
 	iverilog  -g2012 -o tb_fxp_mul_pipe.vvp ./RTL/tb_fxp_mul_pipe.sv ./RTL/fixedpoint.sv
-	vvp -n tb_fxp_mul_pipe.vvp > tb_fxp_div_pipe.log
+	vvp -n tb_fxp_mul_pipe.vvp > tb_fxp_mul_pipe.log
 	rm tb_fxp_mul_pipe.vvp
 
 sim-fxp_sin:
@@ -47,7 +47,7 @@ sim-fxp2float:
 
 sim-fxp2float_pipe:
 	iverilog -g2012 -o tb_fxp2float_pipe.vvp ./RTL/tb_fxp2float_pipe.sv ./RTL/fixedpoint.sv
-	vvp -n tb_fxp2float_pipe.vvp > tb_fxp2float.log
+	vvp -n tb_fxp2float_pipe.vvp > tb_fxp2float_pipe.log
 	rm tb_fxp2float_pipe.vvp
 
 clean:
